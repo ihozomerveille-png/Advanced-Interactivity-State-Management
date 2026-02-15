@@ -1,141 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jane Bloglife</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-
-<h2>JANE BLOGLIFE</h2>
-
-<input id="searchInput" placeholder="Search blog...">
-
-<div>
-Engagement Score:
-<span id="scoreValue">0</span>
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">Fashion</a>
+  <a href="#">Lifestyle</a>
+  <a href="#">Contact</a>
 </div>
 
-</nav>
-
-
-<!-- HEADER -->
-<header class="main-header">
-
-<h1>Welcome to the blog of <span>Jane's world</span></h1>
-
+<!-- HERO HEADER -->
+<header class="hero">
+  <h1>JANE BLOGLIFE</h1>
+  <p>Welcome to Jane's world</p>
 </header>
 
+<!-- MAIN GRID -->
+<div class="container">
 
-<!-- HERO IMAGE -->
-<section class="hero">
+  <!-- LEFT BLOG POSTS -->
+  <main class="posts">
 
-<h2>Jane's</h2>
-<h1>FASHION BLOG</h1>
+    <article class="post">
+      <h2>Title Heading</h2>
+      <p class="date">Fashion Blog, May 2, 2025</p>
+      <img src="images/post1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
 
-</section>
+      <button onclick="likePost(this)">Like</button>
+      <button onclick="toggleReply(this)">Replies</button>
 
-
-<!-- MAIN LAYOUT -->
-<div class="layout">
-
-<!-- BLOG POSTS -->
-<main>
-
-<article class="post" data-tag="Hats">
-
-<h3>TITLE HEADING</h3>
-<p class="date">Title description, May 2, 2016</p>
-
-<img src="images/p1.jpg">
-
-<p><strong>More Hats!</strong> I am crazy about hats these days...</p>
-
-<button class="likeBtn">Like</button>
-
-</article>
+      <div class="reply">Nice blog!</div>
+    </article>
 
 
-<article class="post" data-tag="Hats">
+    <article class="post">
+      <h2>Another Blog</h2>
+      <p class="date">Travel Blog</p>
+      <img src="images/post2.jpg">
+      <p>Lorem ipsum dolor sit amet...</p>
 
-<h3>TITLE HEADING</h3>
-<p class="date">Title description, April 23, 2016</p>
+      <button onclick="likePost(this)">Like</button>
+      <button onclick="toggleReply(this)">Replies</button>
 
-<img src="images/p2.jpg">
+      <div class="reply">Amazing post!</div>
+    </article>
 
-<p><strong>Hats!</strong> The trend this summer is hats for men!</p>
+  </main>
 
-<button class="likeBtn">Like</button>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
 
-</article>
+    <div class="card">
+      <h3>About Me</h3>
+      <img src="images/avatar.jpg">
+      <p>Just me, myself and I.</p>
+    </div>
 
+    <div class="card">
+      <h3>Popular Posts</h3>
+      <p>Denim Trends</p>
+      <p>Street Style</p>
+      <p>Summer Fashion</p>
+    </div>
 
-<article class="post" data-tag="Fashion">
+    <div class="card">
+      <h3>Tags</h3>
+      <span class="tag">Fashion</span>
+      <span class="tag">Travel</span>
+      <span class="tag">Lifestyle</span>
+    </div>
 
-<h3>TITLE HEADING</h3>
-<p class="date">Title description, April 7, 2016</p>
-
-<img src="images/p3.jpg">
-
-<p><strong>Dont miss!</strong> The runway in New York City this weekend...</p>
-
-<button class="likeBtn">Like</button>
-
-</article>
-
-</main>
-
-
-<!-- SIDEBAR -->
-<aside>
-
-<div class="card">
-
-<img src="images/avatar.jpg">
-
-<h4>My Name</h4>
-
-<p>Just me, myself and I, exploring the universe...</p>
+  </aside>
 
 </div>
 
-
-<div class="card">
-
-<h4>Popular Posts</h4>
-
-<p>Denim</p>
-<p>Sweaters</p>
-<p>Workshop</p>
-<p>Trends</p>
-
-</div>
-
-
-<div class="card">
-
-<h4>Tags</h4>
-
-<button class="tag">Fashion</button>
-<button class="tag">Hats</button>
-<button class="tag">Jeans</button>
-
-</div>
-
-</aside>
-
-</div>
-
-<button id="backTop" class="hidden">Back To Top</button>
+<button id="topBtn" onclick="scrollTopPage()">↑</button>
 
 <script src="script.js"></script>
 

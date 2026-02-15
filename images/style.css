@@ -1,67 +1,81 @@
 body{
-font-family:Arial;
-margin:0;
-background:#f1f1f1;
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f1f1f1;
 }
 
 nav{
-display:flex;
-justify-content:space-between;
-background:black;
-color:white;
-padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:black;
+    color:white;
+    padding:15px;
+}
+
+nav input{
+    padding:5px;
+    margin-left:15px;
+}
+
+.main-header{
+    text-align:center;
+    background:white;
+    padding:40px 0;
 }
 
 .hero{
-text-align:center;
-background:white;
-padding:40px;
+    background:#333;
+    color:white;
+    text-align:left;
+    padding:60px 30px;
 }
 
 .layout{
-display:grid;
-grid-template-columns:2fr 1fr;
-gap:20px;
-padding:20px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+    padding:20px;
 }
 
 .post{
-background:white;
-padding:20px;
-margin-bottom:20px;
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
 }
 
 .post img{
-width:100%;
+    width:100%;
+    margin:10px 0;
 }
 
 .card{
-background:white;
-padding:15px;
-margin-bottom:20px;
+    background:white;
+    padding:15px;
+    margin-bottom:20px;
 }
 
-.tags{
-text-align:center;
-padding:20px;
+button{
+    cursor:pointer;
+    padding:8px 12px;
+    margin-top:10px;
 }
 
 .tag{
-padding:10px;
-margin:5px;
+    margin:5px;
 }
 
 #backTop{
-position:fixed;
-bottom:20px;
-right:20px;
+    position:fixed;
+    bottom:20px;
+    right:20px;
 }
 
 .hidden{
-display:none;
+    display:none;
 }
 
 .gold{
-color:gold;
-font-weight:bold;
+    color:gold;
+    font-weight:bold;
 }
