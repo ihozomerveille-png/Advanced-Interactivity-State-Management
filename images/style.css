@@ -1,81 +1,70 @@
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f1f1f1;
+font-family: Arial, Helvetica, sans-serif;
+background:#f1f1f1;
+margin:0;
 }
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:black;
-    color:white;
-    padding:15px;
+.header{
+background:white;
+text-align:center;
+padding:48px 16px;
 }
 
-nav input{
-    padding:5px;
-    margin-left:15px;
+.container{
+max-width:1200px;
+margin:auto;
+display:flex;
+gap:20px;
 }
 
-.main-header{
-    text-align:center;
-    background:white;
-    padding:40px 0;
+.left{
+width:66.66%;
 }
 
-.hero{
-    background:#333;
-    color:white;
-    text-align:left;
-    padding:60px 30px;
-}
-
-.layout{
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:20px;
-    padding:20px;
-}
-
-.post{
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-}
-
-.post img{
-    width:100%;
-    margin:10px 0;
+.right{
+width:33.33%;
 }
 
 .card{
-    background:white;
-    padding:15px;
-    margin-bottom:20px;
+background:white;
+margin:20px 0;
+padding:20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+img{
+width:100%;
 }
 
 button{
-    cursor:pointer;
-    padding:8px 12px;
-    margin-top:10px;
+background:black;
+color:white;
+padding:10px 16px;
+border:none;
+cursor:pointer;
 }
 
-.tag{
-    margin:5px;
+input{
+width:100%;
+padding:10px;
+margin-bottom:10px;
 }
 
-#backTop{
-    position:fixed;
-    bottom:20px;
-    right:20px;
+.comments{
+display:block;
+margin-top:10px;
 }
 
-.hidden{
-    display:none;
+/* MOBILE RESPONSIVE like original */
+
+@media screen and (max-width:800px){
+
+.container{
+flex-direction:column;
 }
 
-.gold{
-    color:gold;
-    font-weight:bold;
+.left,.right{
+width:100%;
+}
+
 }

@@ -1,89 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jane Bloglife</title>
-<link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
-  <a href="#">Home</a>
-  <a href="#">Fashion</a>
-  <a href="#">Lifestyle</a>
-  <a href="#">Contact</a>
-</div>
-
-<!-- HERO HEADER -->
-<header class="hero">
-  <h1>JANE BLOGLIFE</h1>
-  <p>Welcome to Jane's world</p>
+<!-- HEADER -->
+<header class="header">
+  <h1><b>JANE BLOGLIFE</b></h1>
+  <p>Welcome to the blog of Jane's world</p>
 </header>
 
-<!-- MAIN GRID -->
+<!-- MAIN CONTAINER -->
 <div class="container">
 
-  <!-- LEFT BLOG POSTS -->
-  <main class="posts">
+<!-- LEFT COLUMN -->
+<div class="left">
 
-    <article class="post">
-      <h2>Title Heading</h2>
-      <p class="date">Fashion Blog, May 2, 2025</p>
-      <img src="images/post1.jpg">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+<div class="card">
+<h2>FASHION BLOG</h2>
+<p>Title description, May 2, 2016</p>
 
-      <button onclick="likePost(this)">Like</button>
-      <button onclick="toggleReply(this)">Replies</button>
+<img src="https://www.w3schools.com/w3images/girl_hat.jpg">
 
-      <div class="reply">Nice blog!</div>
-    </article>
+<p><b>More Hats!</b> I am crazy about hats these days.</p>
 
+<p>
+Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
+convallis maximus nisl. Sed mattis nunc id lorem euismod placerat.
+</p>
 
-    <article class="post">
-      <h2>Another Blog</h2>
-      <p class="date">Travel Blog</p>
-      <img src="images/post2.jpg">
-      <p>Lorem ipsum dolor sit amet...</p>
+<button onclick="toggleComments()">Comments</button>
 
-      <button onclick="likePost(this)">Like</button>
-      <button onclick="toggleReply(this)">Replies</button>
-
-      <div class="reply">Amazing post!</div>
-    </article>
-
-  </main>
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-
-    <div class="card">
-      <h3>About Me</h3>
-      <img src="images/avatar.jpg">
-      <p>Just me, myself and I.</p>
-    </div>
-
-    <div class="card">
-      <h3>Popular Posts</h3>
-      <p>Denim Trends</p>
-      <p>Street Style</p>
-      <p>Summer Fashion</p>
-    </div>
-
-    <div class="card">
-      <h3>Tags</h3>
-      <span class="tag">Fashion</span>
-      <span class="tag">Travel</span>
-      <span class="tag">Lifestyle</span>
-    </div>
-
-  </aside>
+<div id="comments" class="comments">
+<p><b>George</b> May 3, 2015</p>
+<p>Great blog post! Following</p>
+</div>
 
 </div>
 
-<button id="topBtn" onclick="scrollTopPage()">↑</button>
+<div class="card">
+<h2>TITLE HEADING</h2>
+<p>Title description, April 23, 2016</p>
+
+<img src="https://www.w3schools.com/w3images/man_hat.jpg">
+
+<p><b>Hats!</b> The trend this summer is hats for men!</p>
+
+<p>Some text about this blog entry.</p>
+</div>
+
+<div class="card">
+<h2>TITLE HEADING</h2>
+<p>Title description, April 7, 2016</p>
+
+<img src="https://www.w3schools.com/w3images/runway.jpg">
+
+<p><b>Runway!</b> Legendary fashion event coming.</p>
+
+<p>Some text about this blog entry.</p>
+</div>
+
+</div>
+
+<!-- RIGHT SIDEBAR -->
+<div class="right">
+
+<div class="card">
+<img src="https://www.w3schools.com/w3images/avatar_girl2.jpg">
+<h3>Jane</h3>
+<p>Just me, myself and I, exploring the universe.</p>
+</div>
+
+<div class="card">
+<h3>Popular Posts</h3>
+<p>ImageDenim</p>
+<p>ImageSweaters</p>
+<p>ImageWorkshop</p>
+<p>ImageTrends</p>
+</div>
+
+<div class="card">
+<h3>Advertise</h3>
+<p>Your AD Here</p>
+</div>
+
+<div class="card">
+<h3>Tags</h3>
+<p>Fashion New York London Hats Norway Sweaters Ideas Deals Accessories</p>
+</div>
+
+<div class="card">
+<h3>Subscribe</h3>
+<input type="email" placeholder="Enter e-mail">
+<button>Subscribe</button>
+</div>
+
+</div>
+
+</div>
 
 <script src="script.js"></script>
 
