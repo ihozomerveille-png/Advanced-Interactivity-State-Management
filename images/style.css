@@ -1,70 +1,48 @@
-body{
-font-family: Arial, Helvetica, sans-serif;
-background:#f1f1f1;
-margin:0;
-}
+/* Font styles */
+h1,h2,h3,h4,h5,h6 {font-family:"Oswald"}
+body {font-family:"Open Sans"}
 
-.header{
-background:white;
-text-align:center;
-padding:48px 16px;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-display:flex;
-gap:20px;
-}
-
-.left{
-width:66.66%;
-}
-
-.right{
-width:33.33%;
-}
-
-.card{
-background:white;
-margin:20px 0;
-padding:20px;
-box-shadow:0 2px 5px rgba(0,0,0,0.2);
-}
-
-img{
-width:100%;
-}
-
-button{
-background:black;
-color:white;
-padding:10px 16px;
-border:none;
-cursor:pointer;
-}
-
-input{
-width:100%;
-padding:10px;
-margin-bottom:10px;
-}
-
-.comments{
-display:block;
-margin-top:10px;
-}
-
-/* MOBILE RESPONSIVE like original */
-
-@media screen and (max-width:800px){
-
-.container{
-flex-direction:column;
-}
-
-.left,.right{
-width:100%;
-}
-
-}
+/* Colors and layouts */
+.light-grey {background-color:#f1f1f1;}
+.white {background-color:#fff;}
+.black {background-color:#000;color:#fff;}
+.dark-grey {background-color:#333;color:#fff;}
+.container {padding:16px;}
+.padding-16 {padding:16px;}
+.padding-large {padding:24px;}
+.padding-48 {padding:48px;}
+.margin {margin:16px 0;}
+.margin-bottom {margin-bottom:16px;}
+.center {text-align:center;}
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.border {border:1px solid #ccc;}
+.xxxlarge {font-size:50px;}
+.jumbo {font-size:64px;}
+.tag {background-color:#000;color:#fff;padding:4px 8px;}
+.opacity {opacity:0.6;}
+.medium {font-size:14px;}
+.hover-opacity-off:hover {opacity:1;}
+.button {cursor:pointer;border:none;padding:8px 16px;}
+.button.white {background-color:#fff;color:#000;}
+.button.black {background-color:#000;color:#fff;}
+.button.red {background-color:#f44336;color:#fff;}
+.block {display:block;width:100%;}
+.xlarge {font-size:36px;}
+.row {display:flex;flex-wrap:wrap;}
+.col {flex:1; padding:8px;}
+.col.l8 {flex:0 0 66.66%;}
+.col.l4 {flex:0 0 33.33%;}
+.col.s12 {flex:0 0 100%;}
+.col.m3 {flex:0 0 25%;}
+.col.m9 {flex:0 0 75%;}
+.display-container {position:relative;}
+.display-left {position:absolute;top:0;left:0;}
+.image {width:100%;height:auto;}
+.grayscale {filter:grayscale(100%);}
+.animate-opacity {animation:opacityfade 0.5s;}
+@keyframes opacityfade {from {opacity:0;} to {opacity:1;}}
+.modal {display:none;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;}
+.modal-content {margin:15% auto;max-width:400px;}
+.hide-small {display:none;}
