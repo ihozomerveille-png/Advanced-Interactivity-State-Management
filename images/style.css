@@ -1,48 +1,123 @@
-/* Font styles */
-h1,h2,h3,h4,h5,h6 {font-family:"Oswald"}
-body {font-family:"Open Sans"}
+body{
+font-family:"Open Sans", sans-serif;
+margin:0;
+background:#f1f1f1;
+}
 
-/* Colors and layouts */
-.light-grey {background-color:#f1f1f1;}
-.white {background-color:#fff;}
-.black {background-color:#000;color:#fff;}
-.dark-grey {background-color:#333;color:#fff;}
-.container {padding:16px;}
-.padding-16 {padding:16px;}
-.padding-large {padding:24px;}
-.padding-48 {padding:48px;}
-.margin {margin:16px 0;}
-.margin-bottom {margin-bottom:16px;}
-.center {text-align:center;}
-.left {float:left;}
-.right {float:right;}
-.clear {clear:both;}
-.border {border:1px solid #ccc;}
-.xxxlarge {font-size:50px;}
-.jumbo {font-size:64px;}
-.tag {background-color:#000;color:#fff;padding:4px 8px;}
-.opacity {opacity:0.6;}
-.medium {font-size:14px;}
-.hover-opacity-off:hover {opacity:1;}
-.button {cursor:pointer;border:none;padding:8px 16px;}
-.button.white {background-color:#fff;color:#000;}
-.button.black {background-color:#000;color:#fff;}
-.button.red {background-color:#f44336;color:#fff;}
-.block {display:block;width:100%;}
-.xlarge {font-size:36px;}
-.row {display:flex;flex-wrap:wrap;}
-.col {flex:1; padding:8px;}
-.col.l8 {flex:0 0 66.66%;}
-.col.l4 {flex:0 0 33.33%;}
-.col.s12 {flex:0 0 100%;}
-.col.m3 {flex:0 0 25%;}
-.col.m9 {flex:0 0 75%;}
-.display-container {position:relative;}
-.display-left {position:absolute;top:0;left:0;}
-.image {width:100%;height:auto;}
-.grayscale {filter:grayscale(100%);}
-.animate-opacity {animation:opacityfade 0.5s;}
-@keyframes opacityfade {from {opacity:0;} to {opacity:1;}}
-.modal {display:none;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;}
-.modal-content {margin:15% auto;max-width:400px;}
-.hide-small {display:none;}
+h1,h2,h3{
+font-family:"Oswald";
+}
+
+.topbar{
+background:black;
+color:white;
+padding:10px;
+}
+
+.topbar i{
+margin-right:15px;
+cursor:pointer;
+}
+
+.right{
+float:right;
+}
+
+.header{
+text-align:center;
+background:white;
+padding:40px;
+}
+
+.header span{
+background:black;
+color:white;
+padding:5px;
+}
+
+.hero{
+background:url("https://www.w3schools.com/w3images/jane.jpg");
+height:600px;
+background-size:cover;
+position:relative;
+color:white;
+}
+
+.hero-text{
+position:absolute;
+bottom:100px;
+left:40px;
+}
+
+.hero button{
+padding:10px 20px;
+border:none;
+background:#ccc;
+cursor:pointer;
+}
+
+.container{
+display:flex;
+padding:20px;
+gap:20px;
+}
+
+.left{
+flex:70%;
+}
+
+.right{
+flex:30%;
+}
+
+.post{
+background:white;
+padding:20px;
+margin-bottom:20px;
+}
+
+.post img{
+width:100%;
+}
+
+.like{
+background:#eee;
+border:none;
+padding:10px;
+margin-top:10px;
+}
+
+.reply{
+float:right;
+background:black;
+color:white;
+border:none;
+padding:10px;
+}
+
+.card{
+background:white;
+padding:15px;
+margin-bottom:20px;
+}
+
+.card img{
+width:100%;
+}
+
+.subscribe{
+width:100%;
+background:red;
+color:white;
+border:none;
+padding:12px;
+margin-top:10px;
+}
+
+footer{
+background:#555;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}

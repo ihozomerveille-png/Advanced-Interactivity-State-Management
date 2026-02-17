@@ -1,116 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jane Bloglife</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
+<title>Jane Bloglife</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="light-grey">
 
-<!-- Navigation bar with social media icons -->
-<div class="bar black hide-small">
-  <a href="#" class="bar-item button"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="bar-item button"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="bar-item button"><i class="fa fa-snapchat"></i></a>
-  <a href="#" class="bar-item button"><i class="fa fa-flickr"></i></a>
-  <a href="#" class="bar-item button"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="bar-item button"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="bar-item button right"><i class="fa fa-search"></i></a>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-snapchat"></i>
+<i class="fa fa-pinterest"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-linkedin"></i>
+<i class="fa fa-search right"></i>
 </div>
 
-<div class="content" style="max-width:1600px">
+<!-- HEADER -->
+<header class="header">
+<h1>JANE BLOGLIFE</h1>
+<p>Welcome to the blog of <span>Jane's world</span></p>
+</header>
 
-  <!-- Header -->
-  <header class="container center padding-48 white">
-    <h1 class="xxxlarge"><b>JANE BLOGLIFE</b></h1>
-    <h6>Welcome to the blog of <span class="tag">Jane's world</span></h6>
-  </header>
+<!-- HERO IMAGE -->
+<div class="hero">
+<div class="hero-text">
+<h1>Jane's</h1>
+<h2>FASHION BLOG</h2>
+<button>SUBSCRIBE</button>
+</div>
+</div>
 
-  <!-- Image header -->
-  <header class="display-container wide" id="home">
-    <img class="image" src="/w3images/jane.jpg" alt="Fashion Blog" width="1600" height="1060">
-    <div class="display-left padding-large">
-      <h1 class="text-white">Jane's</h1>
-      <h1 class="jumbo text-white hide-small"><b>FASHION BLOG</b></h1>
-      <h6><button class="button white padding-large large opacity hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
-    </div>
-  </header>
+<div class="container">
 
-  <!-- Grid -->
-  <div class="row padding border">
+<!-- LEFT POSTS -->
+<div class="left">
 
-    <!-- Blog entries -->
-    <div class="col l8 s12">
-      <!-- Blog entry 1 -->
-      <div class="container white margin padding-large">
-        <div class="center">
-          <h3>TITLE HEADING</h3>
-          <h5>Title description, <span class="opacity">May 2, 2016</span></h5>
-        </div>
-        <div class="justify">
-          <img src="/w3images/girl_hat.jpg" alt="Girl Hat" style="width:100%" class="padding-16">
-          <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry...</p>
-          <p class="left"><button class="button white border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="right"><button class="button black" onclick="myFunction('demo1')" id="myBtn"><b>Replies &nbsp;</b> <span class="tag white">1</span></button></p>
-          <p class="clear"></p>
-          <div class="row margin-bottom" id="demo1" style="display:none">
-            <hr>
-            <div class="col l2 m3">
-              <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
-            </div>
-            <div class="col l10 m9">
-              <h4>George <span class="opacity medium">May 3, 2015, 6:32 PM</span></h4>
-              <p>Great blog post! Following</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="post">
+<h2>TITLE HEADING</h2>
+<p>Title description, May 2, 2016</p>
 
-      <!-- Repeat Blog entries 2 & 3 here, same structure as above -->
-      <!-- ... -->
+<img src="images/p1.jpg">
 
-    </div>
+<p><b>More Hats!</b> I am crazy about hats these days...</p>
 
-    <!-- Sidebar -->
-    <div class="col l4">
-      <div class="white margin">
-        <img src="/w3images/avatar_girl2.jpg" alt="Jane" style="width:100%" class="grayscale">
-        <div class="container black">
-          <h4>My Name</h4>
-          <p>Just me, myself and I, exploring the universe...</p>
-        </div>
-      </div>
-      <!-- Add Popular Posts, Ads, Tags, Inspiration, Follow Me, Subscribe same as original -->
-      <!-- ... -->
-    </div>
+<button class="like"><i class="fa fa-thumbs-up"></i> Like</button>
+<button class="reply">Replies 1</button>
+</div>
 
-  </div>
+<div class="post">
+<h2>TITLE HEADING</h2>
+<p>Title description, April 23, 2016</p>
+
+<img src="images/p2.jpg">
+
+<p><b>Hats!</b> The trend this summer is hats for men!</p>
+
+<button class="like"><i class="fa fa-thumbs-up"></i> Like</button>
+<button class="reply">Replies 2</button>
+</div>
+
+<div class="post">
+<h2>TITLE HEADING</h2>
+<p>Title description, April 7, 2016</p>
+
+<img src="images/p3.jpg">
+
+<p><b>Dont miss!</b> The runway in New York City this weekend...</p>
+
+<button class="like"><i class="fa fa-thumbs-up"></i> Like</button>
+<button class="reply">Replies 3</button>
+</div>
 
 </div>
 
-<!-- Subscribe Modal -->
-<div id="subscribe" class="modal animate-opacity">
-  <div class="modal-content" style="padding:32px">
-    <div class="container white">
-      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove transparent button xlarge right"></i>
-      <h2 class="wide">SUBSCRIBE</h2>
-      <p>Join my mailing list to receive updates...</p>
-      <p><input class="input border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="button block padding-large red margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
-    </div>
-  </div>
+<!-- RIGHT SIDEBAR -->
+<div class="right">
+
+<div class="card">
+<img src="images/p4.jpg">
+<h3>My Name</h3>
+<p>Just me, myself and I, exploring the universe...</p>
 </div>
 
-<!-- Footer -->
-<footer class="container dark-grey" style="padding:32px">
-  <a href="#" class="button black padding-large margin-bottom"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<div class="card">
+<h3>Popular Posts</h3>
+<ul>
+<li>Denim</li>
+<li>Sweaters</li>
+<li>Workshop</li>
+<li>Trends</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Subscribe</h3>
+<input type="text" placeholder="Enter e-mail">
+<button class="subscribe">Subscribe</button>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<p>Powered by w3.css</p>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
