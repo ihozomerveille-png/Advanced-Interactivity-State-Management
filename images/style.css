@@ -1,123 +1,48 @@
-body{
-font-family:"Open Sans", sans-serif;
-margin:0;
-background:#f1f1f1;
+/* Typography matching original W3 template */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+}
+body {
+    font-family: "Open Sans", sans-serif;
 }
 
-h1,h2,h3{
-font-family:"Oswald";
+/* Nav bar styles */
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.topbar{
-background:black;
-color:white;
-padding:10px;
+/* Back to Top Button Styles */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.topbar i{
-margin-right:15px;
-cursor:pointer;
+/* Helper classes for JS */
+.hidden {
+    display: none !important;
+    opacity: 0;
+    pointer-events: none;
 }
 
-.right{
-float:right;
+/* Tag buttons hover effect to indicate they are clickable */
+.tag-btn {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.tag-btn:hover {
+    background-color: #ccc !important;
+    color: #000 !important;
 }
 
-.header{
-text-align:center;
-background:white;
-padding:40px;
-}
-
-.header span{
-background:black;
-color:white;
-padding:5px;
-}
-
-.hero{
-background:url("https://www.w3schools.com/w3images/jane.jpg");
-height:600px;
-background-size:cover;
-position:relative;
-color:white;
-}
-
-.hero-text{
-position:absolute;
-bottom:100px;
-left:40px;
-}
-
-.hero button{
-padding:10px 20px;
-border:none;
-background:#ccc;
-cursor:pointer;
-}
-
-.container{
-display:flex;
-padding:20px;
-gap:20px;
-}
-
-.left{
-flex:70%;
-}
-
-.right{
-flex:30%;
-}
-
-.post{
-background:white;
-padding:20px;
-margin-bottom:20px;
-}
-
-.post img{
-width:100%;
-}
-
-.like{
-background:#eee;
-border:none;
-padding:10px;
-margin-top:10px;
-}
-
-.reply{
-float:right;
-background:black;
-color:white;
-border:none;
-padding:10px;
-}
-
-.card{
-background:white;
-padding:15px;
-margin-bottom:20px;
-}
-
-.card img{
-width:100%;
-}
-
-.subscribe{
-width:100%;
-background:red;
-color:white;
-border:none;
-padding:12px;
-margin-top:10px;
-}
-
-footer{
-background:#555;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
+/* Engagement Score Gold class */
+.score-gold {
+    color: gold;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
 }
